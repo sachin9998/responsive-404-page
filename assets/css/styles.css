@@ -160,9 +160,9 @@ header {
   text-align: center;
 }
 
-.home__subtitle {
+/* .home__subtitle {
   display: block;
-}
+} */
 
 .home__title {
   font-size: var(--biggest-font-size);
@@ -171,7 +171,7 @@ header {
 
 .home__button {
   margin-top: 2rem;
-  display: iniline-block;
+  display: inline-block;
   background-color: var(--text-color);
   color: #fff;
   padding: 0.8rem 1.5rem;
@@ -284,5 +284,19 @@ header {
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.7;
+  }
+  .home {
+    height: initial;
+    row-gap: 4rem;
+  }
+}
 
 /* For 4K resolutions (3840 x 2160, 4096 x 2160) */
+@media screen and (min-width: 3840px) {
+  body {
+    zoom: 3.1;
+  }
+}
